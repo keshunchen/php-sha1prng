@@ -6,10 +6,10 @@
 
 ## to generate the AES KEY from the Password
 
-      KeyGenerator _generator = KeyGenerator.getInstance("AES");
-			SecureRandom secureRandom = SecureRandom.getInstance("SHA1PRNG");
-			secureRandom.setSeed(strPassword.getBytes());
-			_generator.init(128, secureRandom);
-			return _generator.generateKey();
+        KeyGenerator _generator = KeyGenerator.getInstance("AES");
+        SecureRandom secureRandom = SecureRandom.getInstance("SHA1PRNG");
+        secureRandom.setSeed(strPassword.getBytes());
+        _generator.init(128, secureRandom);
+        return _generator.generateKey();
       
 ## if not aes 128, you can you this php file.
