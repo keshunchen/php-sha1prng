@@ -1,4 +1,4 @@
-# php-sha1prng
+# PHP-SHA1PRNG
 
 ## AES 128 bit, you can use this php code:
 
