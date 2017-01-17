@@ -1,10 +1,10 @@
 # PHP-SHA1PRNG
 
-## AES 128 bit, you can use this php code:
+## You can use this php code to generate the 128bit AES KEY from the password
 
         $key = substr(openssl_digest(openssl_digest($password, 'sha1', true), 'sha1', true), 0, 16);
 
-## to generate the AES KEY from the Password
+## like this java code.
 
         KeyGenerator _generator = KeyGenerator.getInstance("AES");
         SecureRandom secureRandom = SecureRandom.getInstance("SHA1PRNG");
@@ -12,4 +12,4 @@
         _generator.init(128, secureRandom);
         return _generator.generateKey();
       
-## if not aes 128, you can you this php file.
+
